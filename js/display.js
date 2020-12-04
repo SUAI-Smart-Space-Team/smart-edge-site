@@ -1,6 +1,6 @@
 window.onload = function(){
     const app = async () => {
-        const obj = await fetch('https://suai.chupr.ru/chubrWorker.cgi?method=getTelemetry');
+        const obj = await fetch('chubrWorker.cgi?method=getTelemetry');
         const result = await obj.json();
         console.log(result[0])
 		let cpu_1 = document.querySelector('.cpu1');
